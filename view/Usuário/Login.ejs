@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1> Login</h1>
+        <form action="/login/executar" method="POST">
+            <label>Nome:</label>
+            <input name="Nome" type="text"/><br/>
+            <label>Senha:</label>
+            <input name="senha" type="password"/><br/>
+            <input type="submit" value="cadastro"/>
+        </form>
+        <% if(mensagemLogin) { %>
+            <p>
+                <label style= "color:rgb(7, 6, 6)"><%mensagemLogin %></label>
+            </p>
+
+        <%}%>
+
+    </body>
+</html>
